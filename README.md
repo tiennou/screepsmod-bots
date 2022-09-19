@@ -5,11 +5,13 @@ and adds the bots from the `bots.yml` file.
 
 ## Setup
 
-1. Install the bots you will be using:
+1. Install the mod:
+  * `npm install screepsmod-bots --save`
+2. Install the bots you will be using:
   * `npm install @screeps/simplebot --save`
   * `npm install screeps-bot-overmind --save`
   * `npm install screeps-bot-tooangel --save`
-2. Copy or create a bots.yml file in the root of your Screeps server directory:
+3. Copy or create a bots.yml file in the root of your Screeps server directory:
 
 ```yaml
 version: 1
@@ -36,7 +38,7 @@ bots:
   gcl: 1
 ```
 
-3. Add the mod and bots to your `mods.json` file:
+4. Add the mod and bots to your `mods.json` file:
 
 ```json
 {
@@ -52,7 +54,7 @@ bots:
 }
 ```
 
-4. Start the server and connect with your client, the default bots in the corners of
+5. Start the server and connect with your client, the default bots in the corners of
    the map should be gone and replaced with the bots you configured.
 
 ## Operation
