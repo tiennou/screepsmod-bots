@@ -11,8 +11,6 @@ const fs = require('fs');
 const process = require('process');
 
 module.exports = function(config) {
-  console.log(config)
-
   if (!config.backend) {
     console.log('screepsmod-bots: no backend found, skipping');
     return;
