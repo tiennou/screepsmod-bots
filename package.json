@@ -1,11 +1,11 @@
 {
   "name": "screepsmod-bots",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Screeps server mod that makes managing bots easy",
   "main": "index.js",
   "screeps_mod": true,
   "dependencies": {
-    "screeps-bot-overmind": "^1.0.0",
+    "@screeps/backend": "^3.2.3",
     "yaml": "2.0"
   },
   "scripts": {
