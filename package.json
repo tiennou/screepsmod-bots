@@ -1,6 +1,6 @@
 {
   "name": "screepsmod-bots",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Screeps server mod that makes managing bots easy",
   "main": "index.js",
   "screeps_mod": true,
