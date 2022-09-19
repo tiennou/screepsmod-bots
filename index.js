@@ -20,6 +20,8 @@ module.exports = function(config) {
   const file = fs.readFileSync(`${process.cwd()}/bots.yml`, 'utf8')
   const botsConfig = YAML.parse(file);
 
+  // Hook into an event that fires during server startup
+  // TODO find a better one, or add one to the server
   config.backend.on('expressPreConfig', async function(app) {
     console.log('screepsmod-bots: checking bots');
 
