@@ -1,0 +1,23 @@
+{
+  "name": "screepsmod-bots",
+  "version": "0.0.1",
+  "description": "Screeps server mod that makes managing bots easy",
+  "main": "index.js",
+  "dependencies": {
+    "screeps-bot-overmind": "^1.0.0",
+    "yaml": "2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanrolds/screepsmod-bots.git"
+  },
+  "author": "Ryan R. Olds <ryan.r.olds@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryanrolds/screepsmod-bots/issues"
+  },
+  "homepage": "https://github.com/ryanrolds/screepsmod-bots#readme"
+}
