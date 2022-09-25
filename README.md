@@ -11,6 +11,7 @@ and adds the bots from the `bots.yml` file.
   * `npm install @screeps/simplebot --save`
   * `npm install screeps-bot-overmind --save`
   * `npm install screeps-bot-tooangel --save`
+  * `npm install screeps-bot-choreographer --save`
 3. Copy or create a bots.yml file in the root of your Screeps server directory:
 
 ```yaml
@@ -21,21 +22,25 @@ bots:
   position: 22,13,W1N8
   cpu: 200
   gcl: 1
+  log_console: false
 - username: bot2
   botName: tooangel
   position: 34,22,W3N1
   cpu: 200
   gcl: 1
+  log_console: false
 - username: bot3
-  botName: overmind
+  botName: choreographer
   position: 17,12,W8N3
   cpu: 200
   gcl: 1
+  log_console: false
 - username: bot4
   botName: simplebot
   position: 17,37,W9N9
   cpu: 200
   gcl: 1
+  log_console: false
 ```
 
 4. Add the mod and bots to your `mods.json` file:
@@ -49,7 +54,8 @@ bots:
   "bots": {
     "simplebot": "node_modules/@screeps/simplebot/src",
     "overmind": "node_modules/screeps-bot-overmind/src",
-    "tooangel": "node_modules/screeps-bot-tooangel/src"
+    "tooangel": "node_modules/screeps-bot-tooangel/src",
+    "choreographer": "node_modules/screeps-bot-choreographer/dist"
   }
 }
 ```
