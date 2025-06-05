@@ -6,9 +6,17 @@
  * bots.yml.
  */
 const YAML = require('yaml')
-const cliBots = require('@screeps/backend/lib/cli/bots');
 const fs = require('fs');
 const process = require('process');
+const path = require('path');
+
+const serverModulesDir = path.resolve(process.cwd(), 'node_modules');
+
+function serverRequire(id) {
+  return require(require.resolve(id, { paths: [serverModulesDir] }));
+}
+
+const cliBots = serverRequire('@screeps/backend/lib/cli/bots')
 
 module.exports = function(config) {
   if (!config.backend) {
